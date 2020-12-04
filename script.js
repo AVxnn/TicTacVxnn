@@ -29,7 +29,7 @@ function cellClick(){
     if (!this.innerHTML){
         this.innerHTML = player;
     } else {
-        alert('Иди в пизду тут занята')
+        alert('Клетка занята')
         return;
     }
 
@@ -48,7 +48,7 @@ function cellClick(){
             if (cell[i].innerHTML == '') draw = false;
         }
         if (draw){
-            alert('Ничья епта');
+            alert('Ничья');
             location.reload();
         }
     }
